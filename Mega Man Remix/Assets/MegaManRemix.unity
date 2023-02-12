@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 246298044}
   - component: {fileID: 246298043}
   - component: {fileID: 246298045}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62924,7 +62924,7 @@ GameObject:
   - component: {fileID: 259957575}
   - component: {fileID: 259957574}
   - component: {fileID: 259957573}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63034,6 +63034,7 @@ MonoBehaviour:
   jumpHeight: 20
   gravityScale: 5
   mainCamera: {fileID: 2117418196}
+  projectilePrefab: {fileID: 9097602913776424880, guid: d09208a3ea8fdef4a88c5921405137cb, type: 3}
 --- !u!61 &259957574
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63092,7 +63093,7 @@ GameObject:
   - component: {fileID: 292315560}
   - component: {fileID: 292315559}
   - component: {fileID: 292315561}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63203,7 +63204,7 @@ GameObject:
   - component: {fileID: 336631418}
   - component: {fileID: 336631417}
   - component: {fileID: 336631419}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63314,7 +63315,7 @@ GameObject:
   - component: {fileID: 1177008014}
   - component: {fileID: 1177008013}
   - component: {fileID: 1177008015}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63424,7 +63425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337248567}
   - component: {fileID: 1337248566}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63470,7 +63471,7 @@ GameObject:
   - component: {fileID: 1603898958}
   - component: {fileID: 1603898957}
   - component: {fileID: 1603898959}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

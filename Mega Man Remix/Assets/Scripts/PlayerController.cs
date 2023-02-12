@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(BoxCollider2D))]
-
 public class PlayerController : MonoBehaviour
 {
-    public float maxSpeed = 3.4f;
-    public float jumpHeight = 6.5f;
-    public float gravityScale = 1.5f;
+    public float maxSpeed = 15.0f;
+    public float jumpHeight = 20.0f;
+    public float gravityScale = 5.0f;
     public Camera mainCamera;
+    public GameObject projectilePrefab;
 
     bool facingRight = true;
     float moveDirection = 0;
@@ -77,6 +75,14 @@ public class PlayerController : MonoBehaviour
         if (mainCamera)
         {
             mainCamera.transform.position = new Vector3(t.position.x, cameraPos.y, cameraPos.z);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && facingRight)
+        {
+            Instantiate(projectilePrefab, transform.position, Quaternion.Euler(0f, 0f, 0f));
+        } else if (Input.GetKeyDown(KeyCode.Space)) 
+        {
+            Instantiate(projectilePrefab, transform.position, Quaternion.Euler(0f, 180f, 0f));
         }
     }
 

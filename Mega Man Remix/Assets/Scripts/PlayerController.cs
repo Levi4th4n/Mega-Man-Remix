@@ -39,10 +39,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && (isGrounded || Mathf.Abs(r2d.velocity.x) > 0.01f))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             moveDirection = Input.GetKey(KeyCode.A) ? -1 : 1;
-            animator.SetBool("Walking", true);
         }
         else
         {
@@ -55,6 +54,10 @@ public class PlayerController : MonoBehaviour
 
         if (moveDirection != 0)
         {
+            if (isGrounded)
+            {
+                animator.SetBool("Walking", true);
+            }
             if (moveDirection > 0 && !facingRight)
             {
                 facingRight = true;

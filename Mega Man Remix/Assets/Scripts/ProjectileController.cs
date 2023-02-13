@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ProjectileController : MonoBehaviour
 {
-    public GameObject projectilePrefab;
-    public float speed = 5.0f;
+    public float speed = 15.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,5 +16,11 @@ public class ProjectileController : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(collision.gameObject);
+        Destroy(gameObject);
     }
 }

@@ -16,8 +16,8 @@ TagManager:
   - PlayerProjectiles
   - EnemyProjectiles
   - Enemies
-  - 
-  - 
+  - Killfield
+  - InvisibleWall
   - 
   - 
   - 

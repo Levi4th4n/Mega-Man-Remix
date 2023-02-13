@@ -109,10 +109,6 @@ public class PlayerController : MonoBehaviour
             }
         }
         animator.SetBool("Grounded", isGrounded);
-
         r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
-
-        Debug.DrawLine(groundCheckPos, groundCheckPos - new Vector3(0, colliderRadius, 0), isGrounded ? Color.green : Color.red);
-        Debug.DrawLine(groundCheckPos, groundCheckPos - new Vector3(colliderRadius, 0, 0), isGrounded ? Color.green : Color.red);
     }
 }

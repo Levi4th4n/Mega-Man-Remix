@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2736865997994894378}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 2736865998177446006}
   - component: {fileID: 2736865998177446003}
   - component: {fileID: 2736865998177446004}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Snail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,8 +156,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a09311f615de5a42b33cd495aec9d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  weaponMuzzle: {fileID: 2736865997994894378}
-  bullet: {fileID: 904568891815384608, guid: a0f6ff92476f8234e8f82b5f56a9dd3f, type: 3}
-  fireRate: 3000
-  shootingPower: 2
+  projectilePrefab: {fileID: 904568891815384608, guid: a0f6ff92476f8234e8f82b5f56a9dd3f, type: 3}
+  waitingTime: 2

@@ -961,6 +961,7 @@ GameObject:
   - component: {fileID: 611928358}
   - component: {fileID: 611928357}
   - component: {fileID: 611928356}
+  - component: {fileID: 611928359}
   m_Layer: 5
   m_Name: About Button
   m_TagString: Untagged
@@ -1071,6 +1072,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611928354}
   m_CullTransparentMesh: 1
+--- !u!114 &611928359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611928354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4fd22f781cdc5f49b461d73d5518733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &839274435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,6 +1819,7 @@ GameObject:
   - component: {fileID: 1512608916}
   - component: {fileID: 1512608915}
   - component: {fileID: 1512608914}
+  - component: {fileID: 1512608917}
   m_Layer: 5
   m_Name: Exit Button
   m_TagString: Untagged
@@ -1916,6 +1930,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512608912}
   m_CullTransparentMesh: 1
+--- !u!114 &1512608917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512608912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4fd22f781cdc5f49b461d73d5518733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1633271416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,6 +2357,7 @@ GameObject:
   - component: {fileID: 2041202133}
   - component: {fileID: 2041202132}
   - component: {fileID: 2041202131}
+  - component: {fileID: 2041202134}
   m_Layer: 5
   m_Name: Start Button
   m_TagString: Untagged
@@ -2402,7 +2429,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2041202132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2041202134}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MegaManRemix
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2041202132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2441,6 +2480,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041202129}
   m_CullTransparentMesh: 1
+--- !u!114 &2041202134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041202129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4fd22f781cdc5f49b461d73d5518733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2088341947
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 8a7ed2e8808a36a4f810f5cbe6c9f6b5
   - enabled: 1
     path: Assets/Scenes/MegaManRemix.unity
     guid: 7562c2a724c50e943872bde5db85be2b
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: a1641d1f44f66fe4e8ae1ca44adca204
+  - enabled: 1
+    path: Assets/Scenes/AboutMenu.unity
+    guid: 1119ca3b95e8eff4eb6ac9e11c1416a9
   m_configObjects: {}

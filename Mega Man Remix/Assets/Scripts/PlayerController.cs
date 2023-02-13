@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -110,5 +111,10 @@ public class PlayerController : MonoBehaviour
         }
         animator.SetBool("Grounded", isGrounded);
         r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }
